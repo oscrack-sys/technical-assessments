@@ -1,4 +1,4 @@
-def product(a)
+    def product(a)
     prod = 1
     i = 0
     while (i<a.size)
@@ -27,7 +27,8 @@ def product(a)
     -----------------------------------------------------------------------------
 
 
-    def compare(firstw, secondw)
+        
+      def compare(firstw, secondw)
   
       compare = firstw.chars == secondw.chars
   
@@ -38,17 +39,17 @@ def product(a)
 
 ---------------------------------------------------------------------------------
 
-def key_in_hash hash
-  hash.keys.map(&:to_s).sort_by do |item|
+    def key_in_hash hash
+    hash.keys.map(&:to_s).sort_by do |item|
     item.length
-  end
-end
+    end
+    end
 
-puts key_in_hash({ abc: 'hello', another_key: 123, 4567 => 'third' })
+    puts key_in_hash({ abc: 'hello', another_key: 123, 4567 => 'third' })
 
 ----------------------------------------------------------------------------------
 
-'When you call super without any parameters, Ruby sends a message to the parent of 
-the current object, asking it to call a method with the same name as the method from which
-you called super and the parameters passed to the method. On the other hand, when called
-with super(), it does not send any parameters to the parent.'
+    'When you call super without any parameters, Ruby sends a message to the parent of 
+    the current object, asking it to call a method with the same name as the method from which
+    you called super and the parameters passed to the method. On the other hand, when called
+    with super(), it does not send any parameters to the parent.'
